@@ -1,0 +1,9 @@
+<h2 class="flex text-2xl justify-center mt-12 my-6">Residents</h2>
+
+<h1 class="flex text-4xl justify-center mt-12 mb-16">{{ location!.name }}</h1>
+
+<h2 class="flex text-2xl justify-center mb-6">
+  Dimension: {{ location!.dimension }} - Type: {{ location!.type }}
+</h2>
+
+<app-character-list [characters]="location!.residents"/>

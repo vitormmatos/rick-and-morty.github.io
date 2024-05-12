@@ -1,0 +1,12 @@
+<h1 class="flex text-4xl justify-center mt-12 mb-6">Locations</h1>
+
+<main class="flex flex-wrap justify-center">
+  @for(location of locations; track $index) {
+  <app-location [location]="location"/>
+  }
+</main>
+
+<!-- <app-paginator
+  pageName="location/page/"
+  [pageNumber]="pageNumber"
+></app-paginator> -->

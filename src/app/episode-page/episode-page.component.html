@@ -1,0 +1,9 @@
+<h1 class="flex text-4xl justify-center mt-12 mb-6">{{ episode?.name }}</h1>
+
+<h2 class="flex text-2xl justify-center mt-8 mb-6">
+  {{ episode?.air_date }}
+</h2>
+
+<h2 class="flex text-2xl justify-center mt-12 my-6">Appearing Characters</h2>
+
+<app-character-list [characters]="episode?.characters"></app-character-list>

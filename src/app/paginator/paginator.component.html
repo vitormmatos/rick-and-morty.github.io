@@ -1,0 +1,10 @@
+<main class="btn-group flex justify-center my-10">
+  @for(page of pages; track $index){
+  <button
+    class="btn {{ this.pageNumber === page.toString() ? 'btn-active' : '' }}"
+    [routerLink]="['/' + pageName + page]"
+  >
+    {{ page }}
+  </button>
+  }
+</main>

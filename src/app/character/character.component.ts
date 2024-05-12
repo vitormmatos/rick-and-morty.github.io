@@ -1,14 +1,14 @@
 import { Component, Input } from '@angular/core';
+import { Character } from './character.model';
 
 @Component({
   selector: 'app-character',
   standalone: true,
-  imports: [],
   templateUrl: './character.component.html'
 })
 export class CharacterComponent {
 
-  @Input() character: any
+  @Input() character!: Character
   
   getBadgeStatusColor(character: any): string {
     switch (character.status) {

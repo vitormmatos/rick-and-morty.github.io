@@ -9,7 +9,7 @@ RUN pnpm run build --configuration production --aot
 
 # Stage 2: Serve app with nginx server
 FROM nginx:stable-alpine
-COPY nginx.conf /etc/nginx/nginx.conf
+COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
 COPY --from=build /usr/local/app/dist/rick-and-morty /usr/share/nginx/html
 
 EXPOSE 80

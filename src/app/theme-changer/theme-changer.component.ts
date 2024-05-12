@@ -1,9 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-theme-changer',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './theme-changer.component.html'
 })
 export class ThemeChangerComponent {

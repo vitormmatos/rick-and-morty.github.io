@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core'
 import { CharacterComponent } from '../character/character.component'
+import { Character } from '../character/character.model'
 
 @Component({
   selector: 'app-character-list',
@@ -8,5 +9,5 @@ import { CharacterComponent } from '../character/character.component'
   templateUrl: './character-list.component.html'
 })
 export class CharacterListComponent {
-  @Input() characters: any
+  @Input() characters?: Character[]
 }
